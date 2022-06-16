@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volutários</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="../imagens/sun-regular-24.png">
+    <link rel="stylesheet" href="../plugins/jquery.bxslider.css">
+    <link rel="stylesheet" href="../plugins/magnific-popup.css">
+
+    <script src="../plugins/jquery.min.js"></script>
+    <script src="../plugins/jquery.bxslider.min.js"></script>
+    <script src="../plugins/jquery.magnific-popup.js"></script>
+    <script>
+        $(document).ready(function () {
+                $('#galeria-fotos').magnificPopup({
+                    delegate: 'a',
+                    type: 'image',
+                    closeOnContentClick: false,
+                    closeBtnInside: false,
+                    mainClass: 'mfp-with-zoom mfp-img-mobile',
+                    image: {
+                        verticalFit: true,
+                        titleSrc: function (item) {
+                        }
+                    },
+                    gallery: {
+                        enabled: true
+                    },
+                    zoom: {
+                        enabled: true,
+                        duration: 300, // don't foget to change the duration also in CSS
+                        opener: function (element) {
+                            return element.find('img');
+                        }
+                    }
+
+                });
+            });
+    </script>
+
+</head>
+
+<body>
+    <header id="menu1">
+        <h1>SOL DO AMANHECER</h1>
+        <button><a href="https://linkfly.to/31203vVpXn4">Quer ser um voluntário?</a></button>
+        <i class='bx bx-sun'></i>
+    </header>
+    <header id="cabecalho">
+        <nav id="menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="sobre.html">Nós</a></li>
+                <li><a href="voluntarios.html">Voluntários</a></li>
+                <li><a href="#">Doação</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="fotos">
+        <div class="container">
+            <h1>Alguns Voluntários</h1>
+            <div id="galeria-fotos">
+                <a href="../imagens/time/t1.jpeg" title="Foto 01"><img src="../imagens/time/t1.jpeg" alt="">Clara</a>
+                <a href="../imagens/time/t2.jpeg" title="Foto 01"><img src="../imagens/time/t2.jpeg" alt="">Daniel</a>
+                <a href="../imagens/time/t3.jpeg" title="Foto 01"><img src="../imagens/time/t3.jpeg" alt="">leyde</a>
+                <a href="../imagens/time/t5.jpeg" title="Foto 01"><img src="../imagens/time/t5.jpeg" alt="">Andreza</a>
+                <a href="../imagens/time/t6.jpeg" title="Foto 01"><img src="../imagens/time/t6.jpeg" alt="">Leticia</a>
+                <a href="../imagens/time/t7.jpeg" title="Foto 01"><img src="../imagens/time/t7.jpeg" alt="">Vinicius</a>
+                <a href="../imagens/time/t8.jpeg" title="Foto 01"><img src="../imagens/time/t8.jpeg" alt="">Hugo</a>
+                <a href="../imagens/time/t9.jpeg" title="Foto 01"><img src="../imagens/time/t9.jpeg" alt="">Salim</a>
+                <a href="../imagens/time/t10.jpeg" title="Foto 01"><img src="../imagens/time/t10.jpeg" alt="">Carlos</a>
+                <a href="../imagens/time/t12.jpeg" title="Foto 01"><img src="../imagens/time/t12.jpeg" alt="">Michael</a>
+                <a href="../imagens/time/t13.jpeg" title="Foto 01"><img src="../imagens/time/t13.jpeg" alt="">Gabriel</a>
+                <a href="../imagens/time/t15.jpeg" title="Foto 01"><img src="../imagens/time/t15.jpeg" alt="">Rafael</a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="rodape_v">
+        <a href="https://www.instagram.com/p/CH-e4eQj4Lt"><i class='bx bxl-instagram'
+                style="padding: 15px 10px 0 45%;"></i></a>
+        <i class='bx bx-sun bx-tada' style="padding: 15px 10px 0 0; font-size: 25px; color: #000;"></i>
+        <a href=""><i class='bx bxl-youtube' style="padding: 15px 10px 0 0; "></i></a>
+        <span>Maceió - Alagoas</span>
+    </footer>
+</body>
+
+</html>
